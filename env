@@ -1,0 +1,45 @@
+#--------------------------------------------------------------------
+# Example Environment Configuration file
+#
+# Copy this file to ".env" and adjust for your environment.
+#--------------------------------------------------------------------
+
+#--------------------------------------------------------------------
+# APP
+#--------------------------------------------------------------------
+CI_ENVIRONMENT = development
+
+# app.baseURL = 'http://localhost:8080/'
+app.baseURL = 'http://localhost:8080/'
+app.indexPage = ''
+app.appName = 'Sistem Monitoring Walet'
+app.defaultLocale = 'id'
+app.supportedLocales = ['id','en']
+
+#--------------------------------------------------------------------
+# DATABASE
+#--------------------------------------------------------------------
+database.default.hostname = localhost
+database.default.database = db_walet
+database.default.username = root
+database.default.password =
+database.default.DBDriver = MySQLi
+database.default.DBPrefix =
+database.default.charset = utf8mb4
+database.default.DBCollat = utf8mb4_general_ci
+database.default.port = 3306
+
+#--------------------------------------------------------------------
+# ENCRYPTION
+#--------------------------------------------------------------------
+encryption.key =
+encryption.driver = OpenSSL
+
+#--------------------------------------------------------------------
+# SESSION
+#--------------------------------------------------------------------
+session.driver = 'file'
+session.savePath = WRITEPATH . 'session'
+session.expiration = 7200
+session.matchIP = false
+session.regenerateDestroy = false

@@ -1,0 +1,31 @@
+# CodeIgniter 4
+.env
+.env.backup
+*.log
+writable/cache/*
+writable/logs/*
+writable/session/*
+writable/temp/*
+writable/uploads/*
+!writable/cache/.gitkeep
+!writable/logs/.gitkeep
+!writable/session/.gitkeep
+!writable/temp/.gitkeep
+!writable/uploads/.gitkeep
+
+# Vendor
+vendor/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project
+*.zip
+*.tar.gz
